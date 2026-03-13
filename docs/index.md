@@ -9,7 +9,7 @@
 
 > 极简版 AI 编程助手 - 只支持 MiniMax Code Plan CN
 
-[English](./docs/user-guide.md) | [中文](./docs/使用指南.md)
+[English](./docs/index-en.md) | [中文](./docs/index.md)
 
 ## 特性
 
@@ -40,10 +40,12 @@ bun run src/cli/index.ts "计算 1+1"
 
 | 文档 | 说明 |
 |------|------|
-| [使用指南](./docs/使用指南.md) | 完整使用教程 (中文) |
-| [User Guide](./docs/user-guide.md) | Complete usage tutorial (English) |
-| [模型配置指南](./docs/model-config.md) | 模型配置说明 (中文) |
-| [Model Config Guide](./docs/model-config-en.md) | Model configuration (English) |
+| [快速开始](./docs/quickstart.md) | 快速上手指南 |
+| [使用指南](./docs/使用指南.md) | 完整使用教程 |
+| [User Guide](./docs/user-guide.md) | Complete usage tutorial |
+| [模型配置](./docs/model-config.md) | 模型配置说明 |
+| [Model Config](./docs/model-config-en.md) | Model configuration |
+| [技术方案](./docs/technical-design.md) | 项目技术方案 |
 
 ## 支持的工具
 

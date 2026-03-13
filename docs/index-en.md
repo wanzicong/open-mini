@@ -9,7 +9,7 @@
 
 > A minimalist AI coding assistant - supports MiniMax Code Plan CN only
 
-[English](./docs/user-guide.md) | [中文](./docs/使用指南.md)
+[English](./docs/index-en.md) | [中文](./docs/index.md)
 
 ## Features
 
@@ -40,10 +40,12 @@ bun run src/cli/index.ts "Calculate 1+1"
 
 | Document | Description |
 |----------|-------------|
-| [使用指南](./docs/使用指南.md) | Complete usage tutorial (Chinese) |
-| [User Guide](./docs/user-guide.md) | Complete usage tutorial (English) |
-| [模型配置指南](./docs/model-config.md) | Model configuration guide (Chinese) |
-| [Model Config Guide](./docs/model-config-en.md) | Model configuration guide (English) |
+| [Quick Start](./docs/quickstart-en.md) | Quick start guide |
+| [User Guide](./docs/user-guide.md) | Complete usage tutorial |
+| [使用指南](./docs/使用指南.md) | 完整使用教程 (Chinese) |
+| [Model Config](./docs/model-config-en.md) | Model configuration |
+| [模型配置](./docs/model-config.md) | 模型配置说明 |
+| [Technical Design](./docs/technical-design.md) | Technical design doc |
 
 ## Supported Tools
 
