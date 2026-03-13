@@ -19,7 +19,7 @@
 - 💬 **交互式对话** - 支持命令行交互模式
 - ⚡ **快速启动** - 轻量级，依赖少
 
-## 安装
+## 快速开始
 
 ```bash
 # 克隆项目
@@ -28,130 +28,39 @@ cd open-mini
 
 # 安装依赖
 bun install
+
+# 配置 API Key (见文档: docs/model-config.md)
+echo MINIMAX_API_KEY=你的密钥 > .env
+
+# 运行
+bun run src/cli/index.ts "计算 1+1"
 ```
 
-## 配置
+## 文档
 
-### 1. 创建 .env 文件
-
-在项目根目录创建 `.env` 文件：
-
-```
-MINIMAX_API_KEY=your_api_key_here
-```
-
-### 2. 可选配置文件
-
-创建 `.open-mini.json` 配置文件：
-
-```json
-{
-  "model": "MiniMax-M2.5-highspeed",
-  "temperature": 0.7,
-  "maxTokens": 8192,
-  "baseURL": "https://api.minimaxi.com/anthropic/v1"
-}
-```
-
-## 使用
-
-### 命令行模式
-
-```bash
-# 计算
-bun run src/cli/index.ts "计算 123 + 456"
-
-# 回答问题
-bun run src/cli/index.ts "用一句话介绍 TypeScript"
-
-# 创建文件
-bun run src/cli/index.ts "在当前目录创建 hello.txt，内容为 Hello World"
-
-# 读取文件
-bun run src/cli/index.ts "读取 package.json 文件"
-```
-
-### 交互式对话模式
-
-```bash
-# 启动交互式对话
-bun run src/cli/index.ts
-
-# 或使用 -i 参数
-bun run src/cli/index.ts -i
-```
-
-交互式命令：
-- `exit` / `quit` - 退出
-- `clear` - 清除对话历史
-
-### 命令行选项
-
-```
--h, --help              显示帮助信息
--v, --version           显示版本号
--i, --interactive       交互式对话模式
---project <path>        指定项目目录
---model <model>         指定模型名称
---max-iterations <n>   最大迭代次数 (默认: 20)
-```
+| 文档 | 说明 |
+|------|------|
+| [使用指南](./docs/使用指南.md) | 完整使用教程 (中文) |
+| [User Guide](./docs/user-guide.md) | Complete usage tutorial (English) |
+| [模型配置指南](./docs/model-config.md) | 模型配置说明 (中文) |
+| [Model Config Guide](./docs/model-config-en.md) | Model configuration (English) |
 
 ## 支持的工具
 
-| 工具 | 功能 | 示例 |
-|------|------|------|
-| `read` | 读取文件 | 读取 package.json |
-| `write` | 写入文件 | 创建新文件 |
-| `edit` | 编辑文件 | 修改文件内容 |
-| `bash` | 执行命令 | 运行 npm install |
-| `glob` | 搜索文件 | 查找 *.ts 文件 |
-| `grep` | 搜索内容 | 在文件中搜索关键词 |
-
-## 可用模型
-
-| 模型名称 | 说明 |
-|----------|------|
-| `MiniMax-M2.5-highspeed` | MiniMax M2.5 高速版 (默认) |
-| `MiniMax-Text-01` | MiniMax Text 01 |
-| `MiniMax-Code-Plan-Preview` | MiniMax Code Plan 预览版 |
-
-## 项目结构
-
-```
-open-mini/
-├── src/
-│   ├── agent/           # Agent 核心逻辑
-│   ├── cli/            # CLI 入口
-│   ├── config/         # 配置管理
-│   ├── provider/       # MiniMax 集成
-│   ├── tool/           # 工具集
-│   └── util/           # 基础工具
-├── .env                # 环境变量 (不上传)
-├── .gitignore          # Git 忽略配置
-├── docs/
-│   ├── 使用指南.md     # 中文使用指南
-│   └── user-guide.md   # English User Guide
-├── package.json
-└── tsconfig.json
-```
-
-## 开发
-
-```bash
-# 类型检查
-bun run typecheck
-
-# 开发模式
-bun run dev
-```
+| 工具 | 功能 |
+|------|------|
+| `read` | 读取文件 |
+| `write` | 写入文件 |
+| `edit` | 编辑文件 |
+| `bash` | 执行命令 |
+| `glob` | 搜索文件 |
+| `grep` | 搜索内容 |
 
 ## 许可证
 
 MIT License
 
-## 贡献
+## 相关链接
 
-欢迎提交 Issue 和 Pull Request！
-
-- GitHub: https://github.com/wanzicong/open-mini
-- 问题反馈: https://github.com/wanzicong/open-mini/issues
+- [GitHub](https://github.com/wanzicong/open-mini)
+- [MiniMax 开放平台](https://platform.minimaxi.com)
