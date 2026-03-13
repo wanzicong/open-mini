@@ -1,0 +1,7 @@
+{
+  "model": "MiniMax-M2.5-highspeed",
+  "temperature": 0.7,
+  "maxTokens": 8192,
+  "baseURL": "https://api.minimaxi.com/anthropic/v1",
+  "description": "Open Mini 配置文件"
+}

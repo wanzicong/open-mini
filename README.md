@@ -9,11 +9,13 @@
 
 > 极简版 AI 编程助手 - 只支持 MiniMax Code Plan CN
 
+[English](./docs/user-guide.md) | [中文](./docs/使用指南.md)
+
 ## 特性
 
 - 🤖 **单一模型专注** - 只支持 MiniMax Code Plan CN 模型
 - 💻 **跨平台** - 支持 Windows、Linux、macOS
-- 🔧 **6 个内置工具** - Read、Write、Edit、Bash、Glob、Grep
+- 🔧 **6 个内置工具** - Read、Write、Edit，Bash、Glob、Grep
 - 💬 **交互式对话** - 支持命令行交互模式
 - ⚡ **快速启动** - 轻量级，依赖少
 
@@ -21,7 +23,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/open-mini.git
+git clone https://github.com/wanzicong/open-mini.git
 cd open-mini
 
 # 安装依赖
@@ -119,13 +121,16 @@ bun run src/cli/index.ts -i
 open-mini/
 ├── src/
 │   ├── agent/           # Agent 核心逻辑
-│   ├── cli/             # CLI 入口
-│   ├── config/          # 配置管理
+│   ├── cli/            # CLI 入口
+│   ├── config/         # 配置管理
 │   ├── provider/       # MiniMax 集成
 │   ├── tool/           # 工具集
-│   └── util/            # 基础工具
-├── .env                 # 环境变量 (不上传)
+│   └── util/           # 基础工具
+├── .env                # 环境变量 (不上传)
 ├── .gitignore          # Git 忽略配置
+├── docs/
+│   ├── 使用指南.md     # 中文使用指南
+│   └── user-guide.md   # English User Guide
 ├── package.json
 └── tsconfig.json
 ```
@@ -147,3 +152,6 @@ MIT License
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
+
+- GitHub: https://github.com/wanzicong/open-mini
+- 问题反馈: https://github.com/wanzicong/open-mini/issues
